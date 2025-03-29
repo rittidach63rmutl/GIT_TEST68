@@ -1,0 +1,136 @@
+
+
+
+
+
+/* 201e1f-ff4000-faaa8d-feefdd-50b2c0 */
+
+
+
+.bg-alpha{
+    background: #b0acac;
+}
+
+
+
+
+/* Section Caousel */
+.carousel-item {
+    position: relative;
+    height: 500px; /* ความสูงเริ่มต้นสำหรับ Desktop */
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* 📱 ปรับสำหรับหน้าจอขนาดเล็ก (มือถือ) */
+@media (max-width: 768px) {
+    .carousel-item {
+        height: 300px;
+    }
+
+    .carousel-caption {
+        width: 90%;
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .carousel-caption h1 {
+        font-size: 18px;
+    }
+
+    .carousel-caption p {
+        font-size: 12px;
+    }
+}
+
+/* 💻 ปรับสำหรับหน้าจอใหญ่ (Tablet - Desktop) */
+@media (min-width: 1200px) {
+    .carousel-item {
+        height: 600px;
+    }
+
+    .carousel-caption {
+        width: 70%;
+        font-size: 18px;
+    }
+}
+
+.border-short-bottom{
+    position: relative;
+    padding: 20px 0px;
+    margin-bottom:25px ;
+}
+
+.border-short-bottom:after {
+    position: absolute;
+    content: "";
+    width: 500px;
+    height: 2px;
+    bottom: 0;
+    background-color: black;
+    left: 50%; /* ทำให้ตำแหน่งซ้ายอยู่ที่ 50% ของหน้าจอ */
+    transform: translateX(-50%); /* เลื่อนกลับไปที่กลางจากตำแหน่ง 50% */
+}
+
+
+/* Section Blog */
+.warpper-card-img {
+    position: relative;
+    width: auto;
+    height: 350px;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    overflow: hidden;
+}
+.warpper-card-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 2s ease-in-out; /* เพิ่ม transition */
+}
+
+.warpper-card-img:hover img {
+    transform: scale(1.1); /* ขยายภาพเมื่อ hover */
+}
+
+/* Section Footer */
+.semi-footer{
+    background-color: #50b2c0;
+}
+
+.semi-footer h4{
+    color: #000000;
+    border-bottom: 1px solid;
+    padding:10px 0;
+}
+
+.footer {
+    background-color: #000000;
+    color: white;
+    font-size: 0.7rem;
+    height: 90px;
+    line-height: 90px; /* ใช้ได้ถ้ามีเพียงบรรทัดเดียว */
+    text-align: center; /* จัดให้อยู่กลางแนวนอน */
+}
