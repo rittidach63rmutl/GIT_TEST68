@@ -1,16 +1,24 @@
 {
-  "name": "blog",
+  "name": "firebase-app-hosting-nextjs",
   "version": "1.0.0",
-  "main": "index.js",
-  "dependencies": {
-    "bootstrap": "^5.3.3",
-    "jquery": "^3.7.1"
-  },
-  "devDependencies": {},
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
-  "author": "",
-  "license": "ISC",
-  "description": ""
+  "dependencies": {
+    "next": "^15.2.4",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^9",
+    "eslint-config-next": "15.0.0",
+    "typescript": "^5"
+  }
 }
